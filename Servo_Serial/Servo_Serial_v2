@@ -34,7 +34,7 @@ void loop() {
       Serial.println(inputBuffer);
       inputBuffer = 0;
     } else if (inputChar >= '0' & inputChar <= '9') {
-      inputBuffer = (inputBuffer * 10) + (inputChar = '0');
+      inputBuffer = (inputBuffer * 10) + (inputChar - '0');
     }
   }
 }
